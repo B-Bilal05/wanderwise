@@ -48,96 +48,64 @@
 
 ### 1. Cloner le projet
 ```bash
-git clone https://github.com/TON_USERNAME/wanderwise.git
+git clone https://github.com/B-Bilal05/wanderwise.git
 cd wanderwise
-```
-
-### 2. Installer les dépendances
-```bash
+Installer les dépendances
 npm install
-```
+[200~3. Configurer les variables d'environnement
+bash
 
-### 3. Configurer les variables d'environnement
-```bash
 cp .env.example .env.local
-```
-Remplir `.env.local` :
-```env
-GROQ_API_KEY=gsk_xxxxxxxxxxxxxxxxxxxx
-NEXT_PUBLIC_OPENWEATHER_KEY=xxxxxxxxxxxxxxxxxxxxxxxx
-```
 
-### 4. Lancer en développement
-```bash
+Remplir .env.local :
+env
+
+GROQ_API_KEY=gsk_votre_cle_groq
+NEXT_PUBLIC_OPENWEATHER_KEY=votre_cle_meteo
+
+4. Lancer en développement
+bash
+
 npm run dev
-```
-Ouvrir [http://localhost:3000](http://localhost:3000)
 
----
+Ouvrir http://localhost:3000
+📁 Structure du Projet
+text
 
-## 📁 Structure du Projet
 wanderwise/
 ├── src/app/
-│   ├── page.tsx                    # Page principale
-│   ├── compare/page.tsx            # Comparateur de villes
-│   ├── favorites/page.tsx          # Destinations favorites
-│   ├── budget-planner/page.tsx     # Planificateur de budget
-│   ├── itinerary/page.tsx          # Itinéraire jour par jour
-│   ├── packer/page.tsx             # Packer AI (bagages)
-│   ├── safety/page.tsx             # Sécurité & Santé
-│   ├── chatbot/page.tsx            # Chatbot IA
+│   ├── page.tsx
+│   ├── compare/
+│   ├── favorites/
+│   ├── budget-planner/
+│   ├── itinerary/
+│   ├── packer/
+│   ├── safety/
+│   ├── chatbot/
 │   ├── api/
-│   │   ├── destination/route.ts
-│   │   ├── compare/route.ts
-│   │   ├── translate/route.ts
-│   │   ├── budget-planner/route.ts
-│   │   ├── itinerary/route.ts
-│   │   ├── packer/route.ts
-│   │   ├── safety/route.ts
-│   │   └── recommendation/route.ts
 │   ├── components/
-│   │   ├── MapView.tsx
-│   │   ├── Weather.tsx
-│   │   └── ChatInterface.tsx
-│   ├── context/
-│   │   └── LanguageContext.tsx
-│   └── hooks/
-│       ├── useFavorites.ts
-│       └── useTranslation.ts
-├── .env.local
-└── .env.example
----
+│   └── context/
+├── public/
+├── package.json
+└── README.md
 
-## 🌐 Pages de l'Application
+🌐 Pages de l'Application
+RouteDescription
+/Recherche et fiche destination
+/compareComparateur de 2 villes
+/favoritesDestinations sauvegardées
+/budget-plannerPlanificateur de budget
+/itineraryGénérateur d'itinéraire
+/packerListe de bagages IA
+/safetySécurité & santé
+/chatbotAssistant de voyage
+🔑 Variables d'Environnement
+VariableDescription
+GROQ_API_KEYClé API Groq (serveur)
+NEXT_PUBLIC_OPENWEATHER_KEYClé OpenWeatherMap (client)
+👤 Auteur
 
-| Route | Description |
-|-------|-------------|
-| `/` | Recherche et fiche destination |
-| `/compare` | Comparateur de 2 villes |
-| `/favorites` | Destinations sauvegardées |
-| `/budget-planner` | Planificateur de budget |
-| `/itinerary` | Générateur d'itinéraire |
-| `/packer` | Liste de bagages IA |
-| `/safety` | Sécurité & santé |
-| `/chatbot` | Assistant de voyage |
+Bilal BOUKAICH – GitHub
+📄 Licence
 
----
-
-## 🔑 Variables d'Environnement
-
-| Variable | Description | Source |
-|----------|-------------|--------|
-| `GROQ_API_KEY` | Clé API Groq (serveur) | [console.groq.com](https://console.groq.com) |
-| `NEXT_PUBLIC_OPENWEATHER_KEY` | Clé OpenWeatherMap (client) | [openweathermap.org](https://openweathermap.org/api) |
-
----
-
-## 👨‍💻 Auteur
-
-**Boukaich Bilal** — Étudiant en Ingénierie des Données et du Logiciel, INSEA Maroc
-
----
-
-## 📄 Licence
-
-MIT License — libre d'utilisation et de modification.
+Libre d'utilisation pour un usage pédagogique.
