@@ -28,7 +28,7 @@
 
 ---
 
-## 🛠️ Stack Technique
+## 🛠️  Stack Technique
 
 - **Frontend** : Next.js 14 (App Router), TypeScript, Tailwind CSS
 - **IA** : Groq API — Llama 3.3 70B (gratuit)
@@ -99,13 +99,16 @@ RouteDescription
 /packerListe de bagages IA
 /safetySécurité & santé
 /chatbotAssistant de voyage
+
 🔑 Variables d'Environnement
 VariableDescription
 GROQ_API_KEYClé API Groq (serveur)
 NEXT_PUBLIC_OPENWEATHER_KEYClé OpenWeatherMap (client)
+
 👤 Auteur
 
 Bilal BOUKAICH – GitHub
+
 📄 Licence
 
 Libre d'utilisation pour un usage pédagogique.
